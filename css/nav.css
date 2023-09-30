@@ -1,0 +1,79 @@
+/* 清除基本樣式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 啟用flex布局 */
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* 窗口最小寬度 */
+body {
+    min-width: 1400px;
+}
+
+/* 有使用到z-index */
+nav {
+    /* 用fixed實現stick效果 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    
+    width: 100%;
+    height: 66px;
+    color: #fff;
+    background-color: rgba(17, 17, 17, 0.75);
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+}
+
+.logoBox {
+    width: 317px;
+    height: 105px;
+
+    /* 啟用定位 */
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 30px;
+}
+
+.musicButton {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 70px;
+}
+
+/* 有使用到z-index */
+.itemBox {
+    margin: 0 25px;
+    z-index: 1;
+}
+
+.itemBox a {
+    margin-right: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.playBox {
+    margin-left: auto;
+}
+
+.playBox a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.loginButton {
+    width: 27px;
+    height: 27px;
+    margin: 0 20px;
+}

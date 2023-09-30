@@ -1,0 +1,51 @@
+.poster video {
+    width: 100%;
+    height: 100vh;
+    display: block;
+
+    /* object-fit 是一个 CSS 属性，用于控制替换元素（如 <img> 和 <video>）在其容器内的布局方式，特别是在容器的大小与替换元素的宽高比例不匹配时。
+    它允许你定义替换元素如何适应其容器，并决定是拉伸、缩放、剪切或自适应等 */
+    object-fit: cover;
+}
+
+.news {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/news_background.jpg") no-repeat center/cover;
+}
+
+.city li {
+    width: 100%;
+    height: 260px;
+    line-height: 260px;
+    text-align: center;
+    background:no-repeat center/100% 100% cover;
+    position: relative;
+}
+
+.cityBg::before {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cityBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: center no-repeat;
+}
+
+.city li p {
+    position: relative;
+    z-index: 3;
+}

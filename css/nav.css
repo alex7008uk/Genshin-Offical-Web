@@ -11,6 +11,12 @@
     align-items: center;
 }
 
+/* 啟用flex col布局 */
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
 /* 窗口最小寬度 */
 body {
     min-width: 1400px;

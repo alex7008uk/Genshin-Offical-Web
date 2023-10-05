@@ -26,6 +26,10 @@
     1. 新增footer樣式
     2. 新增演唱會連結
     3. 新增播放PV區塊與其邊框樣式
+* 2023/10/05
+    1. 新增playButton的動畫與連結
+    2. 新增deviceArea裡的排版與連結
+    3. 完成poster區塊
 ## 參考資料
 
 * https://genshin.hoyoverse.com/zh-tw/home

@@ -30,6 +30,11 @@
     1. 新增playButton的動畫與連結
     2. 新增deviceArea裡的排版與連結
     3. 完成poster區塊
+* 2023/10/09
+    1. 完成news標題
+    2. 完成news自動輪播圖功能
+    3. 完成news手動輪播圖功能
+    4. 完成news列表排版與樣式
 ## 參考資料
 
 * https://genshin.hoyoverse.com/zh-tw/home

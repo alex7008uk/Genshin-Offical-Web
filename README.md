@@ -2,12 +2,13 @@
 
 ## 專案介紹
 
-觀摩原神的官方網站，並用已知的 HTML 與 CSS 知識做一個自己的版本
+觀摩原神的官方網站，並用已知的 HTML、CSS 與 JavaScript 知識做一個自己的版本
 
 ## 使用技術
 
-* css
-* html
+* CSS
+* HTML
+* JavaScript
 
 ## 更新事項
 
@@ -35,6 +36,11 @@
     2. 完成news自動輪播圖功能
     3. 完成news手動輪播圖功能
     4. 完成news列表排版與樣式
+* 2023/10/12
+    1. 優化手動輪播圖效能
+    2. 調整news區塊超連結
+    3. 新增city字體背景
+    4. 新增city區塊動畫
 ## 參考資料
 
 * https://genshin.hoyoverse.com/zh-tw/home

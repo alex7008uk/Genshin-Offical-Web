@@ -1,0 +1,12 @@
+footer {
+  width: 100%;
+  background-color: #111;
+}
+
+.footerTop {
+  height: 50px;
+}
+
+.footerBottom {
+  background-color: black;
+}

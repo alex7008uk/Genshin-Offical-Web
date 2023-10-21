@@ -1,0 +1,83 @@
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* |                                                   poster                                                              | */
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+.container .poster {
+  width: 100%;
+  height: 700px;
+  background: url("../images/news/poster/posterbackground.jpg") no-repeat center/cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card {
+  width: 420px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 5px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  position: relative;
+
+  cursor: pointer;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.container .card .imgBox {
+  width: 380px;
+  height: 190px;
+  margin: 5% 5% 0 5%;
+  overflow: hidden;
+}
+
+.container .card .imgBox img {
+  width: 380px;
+  height: 190px;
+  object-fit: cover;
+  transition: 0.3s linear all;
+}
+
+.container .card:hover .imgBox img {
+  transform: scale(1.2);
+  transition: 0.3s linear all;
+}
+
+.container .card p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5% 5% 0 5%;
+}
+
+.container .card .abstract {
+  display: block;
+  margin: 5% 5% 0 5%;
+  font-size: 17px;
+}
+
+.container .card .date::before {
+  content: "2023年";
+}
+
+.container .card .date {
+  font-weight: normal;
+  font-size: 17px;
+  position: absolute;
+  bottom: 0;
+  margin: 0% 5% 5% 5%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container .card .type {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0% 5% 5% 5%;
+  color: #9c3;
+}
+

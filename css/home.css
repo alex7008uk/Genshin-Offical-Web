@@ -42,7 +42,7 @@
 .playButtonBorder {
     width: 100%;
     height: 76px;
-    background: url("../images/playButtonBorder.png") no-repeat center center;
+    background: url("../images/home/poster/playButtonBorder.png") no-repeat center center;
     position: relative;
 }
 
@@ -64,7 +64,7 @@
     content: "";
     width: 28px;
     height: 28px;
-    background-image: url("../images/playButton.png");
+    background-image: url("../images/home/poster/playButton.png");
 
     position: absolute;
     z-index: 1;
@@ -90,7 +90,7 @@
     width: 180px;
     height: 180px;
     margin: 0 -10px 0 5px;
-    background: url("../images/QRcode.png") no-repeat center center;
+    background: url("../images/home/download/QRcode.png") no-repeat center center;
     transform: scale(0.75);
 } 
 
@@ -110,7 +110,7 @@
 .news {
     width: 100%;
     height: 100vh;
-    background: url("../images/news_background.jpg") no-repeat center/cover;
+    background: url("../images/home/news/news_background.jpg") no-repeat center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,7 +136,7 @@
     position: absolute;
     top: 40%;
     left: -420%;
-    background: url("../images/news_title.png") no-repeat left center/cover;
+    background: url("../images/home/news/news_title.png") no-repeat left center/cover;
 }
 
 .news h1::after {
@@ -146,7 +146,7 @@
     position: absolute;
     top: 40%;
     right: -420px;
-    background: url("../images/news_title.png") no-repeat right center/cover;
+    background: url("../images/home/news/news_title.png") no-repeat right center/cover;
     transform: rotateY(180deg);
 }
 
@@ -244,12 +244,12 @@
     font-size: 15px;
 }
 
-.newsList ul a span img {
+.newsList ul span a img {
     vertical-align: text-top;
     margin-right: 10px;
 }
 
-.newsList ul a:nth-child(7) {
+.newsList ul span:nth-child(7) {
     text-align: right;
     color: rgba(255, 255, 255, 0.7);
     font-size: 20px;
@@ -280,6 +280,7 @@
     width: 100%;
     height: 100%;
     background: center no-repeat;
+    transition: 0.3s linear all;
 }
 
 .city li p {
@@ -287,6 +288,22 @@
     z-index: 3;
     color: white;
     font-size: 40px;
+}
+
+.city li:not(:nth-child(6)):hover {
+    border: 5px solid white;
+    transition: 0.2s linear all;
+}
+
+.city li:hover .characterImg,
+.city li:hover .underline {
+    opacity: 1;
+    transition: 0.2s linear all;
+}
+
+.city li:not(:nth-child(6)):hover .cityBg {
+    transform: translateZ(100px);
+    transition: 0.3s linear all;
 }
 
 .upcoming::before {
@@ -319,7 +336,7 @@
 
 .city li p:not(.upcoming):after {
     content: "";
-    background-image: url("../images/cityFontBg.png");
+    background-image: url("../images/home/cityBg/cityFontBg.png");
     filter: brightness(2);
     width: 132px;
     height: 132px;

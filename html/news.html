@@ -8,29 +8,29 @@
   <link rel="stylesheet" href="../css/nav.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/news.css">
+  <script src="../JS/news.js" defer></script>
 </head>
 
 <body>
   <nav class="flexRow">
     <div class="flexRow logoBox">
-        <img src="../images/nav/paused.png" alt="paused" class="musicButton">
-        <img src="../images/nav/logo.png" alt="GenshinLogo" class="logo">
+      <img src="../images/nav/paused.png" alt="paused" class="musicButton">
+      <img src="../images/nav/logo.png" alt="GenshinLogo" class="logo">
     </div>
     <div class="flexRow itemBox">
-        <a href="./home.html">首頁</a>
-        <a href="./news.html">新聞</a>
-        <a href="">角色</a>
-        <a href="">資料</a>
+      <a href="./home.html">首頁</a>
+      <a href="./news.html">新聞</a>
+      <a href="">角色</a>
+      <a href="">資料</a>
     </div>
     <div class="flexRow playBox">
-        <a href="#" class="flexRow">
-            <span>登入</span>
-            <img src="../images/nav/login.png" alt="login" class="loginButton">
-        </a>
-        <img src="../images/nav/download.png" alt="download" class="downloadButton">
+      <a href="#" class="flexRow">
+        <span>登入</span>
+        <img src="../images/nav/login.png" alt="login" class="loginButton">
+      </a>
+      <img src="../images/nav/download.png" alt="download" class="downloadButton">
     </div>
   </nav>
-
   <div class="container">
     <div class="poster">
       <div class="card">
@@ -48,28 +48,24 @@
         <span class="type">資訊</span>
       </div>
       <div class="card">
-        <div class="imgBox"><img src="../images/news/poster/news3.jpg" alt="news3"></div>       
+        <div class="imgBox"><img src="../images/news/poster/news3.jpg" alt="news3"></div>
         <p>萊歐斯利——「理論上來講，完全不認識我的人會比較幸福。」</p>
         <span class="abstract">旅行者們好呀！今天為大家介紹的角色是萊歐斯利。</span>
         <p class="date">10月11日</p>
         <span class="type">資訊</span>
       </div>
     </div>
-    
-    <div class="atricleList">
-      <div class="news"></div>
-      <div class="news"></div>
-      <div class="news"></div>
-      <div class="news"></div>
-      <div class="news"></div>
-      <div class="news"></div>
-      <div class="news"></div>
-      <div class="news"></div>
-      <div class="news"></div>
-      <div class="news"></div>
+    <div class="newsBox">
+      <ul class="classificationList">
+        <li><button class="newsBoxBtn activeBtn">最新</button></li>
+        <li><button class="newsBoxBtn">資訊</button></li>
+        <li><button class="newsBoxBtn">公告</button></li>
+        <li><button class="newsBoxBtn">活動</button></li>
+      </ul>
+      <ul class="articleList"></ul>
+      <button class="load">加載更多</button>
     </div>
   </div>
-
   <footer>
     <div class="footerTop">
       <a></a>
@@ -79,10 +75,8 @@
       <a></a>
       <a></a>
       <a></a>
-
     </div>
     <div class="footerBottom"></div>
   </footer>
 </body>
-
 </html>

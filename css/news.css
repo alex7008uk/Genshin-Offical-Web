@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(240, 240, 240);
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------- */
 /* |                                                   poster                                                              | */
 /* ------------------------------------------------------------------------------------------------------------------------- */
@@ -81,3 +85,140 @@
   color: #9c3;
 }
 
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* |                                                   newsBox                                                             | */
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+.newsBox {
+  width: 1280px;
+  margin: auto;
+  padding-bottom: 208px;
+}
+
+.classificationList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.newsBoxBtn {
+  min-width: 155px;
+  height: 36px;
+  margin-top: 38px;
+  margin-right: 20px;
+
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+
+  background-color: rgba(57,59,64,0.18);
+  color: #393b40;
+  border-color: transparent;
+  border-radius: 4px;
+  transition: 0.2s all ease;
+  cursor: pointer;
+}
+
+.newsBoxBtn:hover {
+  background-color: #393b40;
+  color: #f4d8a8;
+  transition: 0.2s all ease;
+}
+
+.activeBtn {
+  background-color: #393b40;
+  color: #f4d8a8;
+}
+
+.articleList{
+  margin-top: 38px;
+  list-style: none;
+}
+
+.article {
+  min-height: 170px;
+  margin-top: 10px;
+  background-color: #fafafa;
+  border: 3px rgba(50, 50, 50, 0) solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transition: 0.2s all linear;
+  cursor: pointer;
+}
+
+.article:hover {
+  border: 3px rgba(50, 50, 50, 0.2) solid;
+  transition: 0.2s all ease;
+}
+
+.articleImg {
+  width: 265px;
+  height: 140px;
+  margin: 20px;
+  object-fit: cover;
+}
+
+.articleText {
+  margin-top: 20px;
+}
+
+.articleText .articleTitle {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.articleText .articleAbstract {
+  display: block;
+  margin-top: 11px;
+  font-size: 16px;
+  color: #7d7d7d;
+}
+
+.articleText .articleMeta {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.articleText .articleMeta .articleDate {
+  margin-right: 56px;
+  color: #999;
+}
+
+.articleInfo {
+  color: #ffc000;
+}
+
+.articleActivity {
+  color: #9c3;
+}
+
+.articleAnnouncement {
+  color: #bc80ff;
+}
+
+.load {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #393b40;
+  border-color: transparent;
+  border-radius: 4px;
+  opacity: 0.8;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2 opacity linear;
+  margin-top: 40px;
+}
+
+.load:hover {
+  opacity: 0.7;
+  transition: 0.2 opacity linear;
+}

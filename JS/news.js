@@ -57,16 +57,18 @@ const loadArticle = function(type = "最新") {
 
 const loadLi = function(index = 0) {
   articleList.insertAdjacentHTML("beforeend",
-      `<li class="article">
-      <img src="${data.contents[index].pic}" alt="pic" class="articleImg">
-      <div class="articleText">
-        <span class="articleTitle">${data.contents[index].title}</span>
-        <span class="articleAbstract">${data.contents[index].abstract}</span>
-        <div class="articleMeta">
-          <span class="articleDate">${data.contents[index].date}</span>
-          <span class="article${data.contents[index].class}">${data.contents[index].type}</span>
-        </div>
-      </div>
+    `<li class="article">
+        <a href= ${data.contents[index].url}>
+          <img src= ${data.contents[index].pic} alt="pic" class="articleImg">
+          <div class="articleText">
+            <span class="articleTitle">${data.contents[index].title}</span>
+            <span class="articleAbstract">${data.contents[index].abstract}</span>
+            <div class="articleMeta">
+              <span class="articleDate">${data.contents[index].date}</span>
+              <span class="article${data.contents[index].class}">${data.contents[index].type}</span>
+            </div>
+          </div>
+        </a>
     </li>`
   );
 }

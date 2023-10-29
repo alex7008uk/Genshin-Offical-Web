@@ -8,34 +8,98 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="icon" href="../images/favicon.ico">
     <script src="../JS/home.js" defer></script>
+    <script src="../JS/nav.js" defer></script>
 </head>
 
 <body>
+    <div class="mask"></div>
+
     <nav class="flexRow">
         <div class="flexRow logoBox">
             <img src="../images/nav/paused.png" alt="paused" class="musicButton">
             <img src="../images/nav/logo.png" alt="GenshinLogo" class="logo">
         </div>
         <div class="flexRow itemBox">
-            <a href="./home.html">首頁</a>
+            <a href="./home.html" class="active">首頁</a>
             <a href="./news.html">新聞</a>
             <a href="">角色</a>
             <a href="">資料</a>
         </div>
         <div class="flexRow playBox">
-            <a href="#" class="flexRow">
+            <div class="flexRow loginButton">
                 <span>登入</span>
-                <img src="../images/nav/login.png" alt="login" class="loginButton">
-            </a>
+                <img src="../images/nav/login.png" alt="login" class="loginImg">
+            </div>
             <img src="../images/nav/download.png" alt="download" class="downloadButton">
         </div>
+
+        <div class="login">
+            <img src="../images/nav/loginCancle.png" alt="loginCancle.png" class="loginCancle">
+            <img src="../images/nav/loginLogo.png" alt="loginLogo.png" class="loginLogo">
+            <p>帳號登入</p>
+            <input type="text" placeholder="使用者名稱/電子信箱">
+            <input type="password" placeholder="密碼">
+            <button>登入</button>
+            <div class="help">
+                <span>遇到問題</span>
+                <span>立即註冊</span>
+            </div>
+            <div class="more">
+                <div></div>
+                <p>更多登入方式</p>
+            </div>
+            <div class="loginIcon">
+                <img src="../images/nav/googleIcon.png" alt="googleIcon">
+                <img src="../images/nav/iosIcon.png" alt="iosIcon">
+                <img src="../images/nav/fbIcon.png" alt="fbIcon">
+                <img src="../images/nav/twitterIcon.png" alt="twitterIcon">
+            </div>
+        </div>
+
+        <div class="download">
+            <div class="downloadBox">
+                <img src="../images/nav/cancle.png" alt="cancle" class="cancle">
+                <div class="downloadText">
+                    <img src="../images/nav/star.png" alt="star">
+                    <span>下載遊戲</span>
+                    <img src="../images/nav/star.png" alt="star">
+                </div>
+                <div class="downloadArea">
+                    <img src="../images/home/download/QRcode.png" alt="QRcode"></img>
+                    <div>
+                        <div>
+                            <a href="https://www.playstation.com/zh-hant-tw/games/genshin-impact/" target="_blank">
+                                <img src="../images/home/download/ps4.png">
+                            </a>
+                            <a href="./home.html">
+                                <img src="../images/home/download/windows.png">
+                            </a>
+                        </div>
+                        <div class="downloadBottom">
+                            <a href="https://apps.apple.com/app/id1517783697" target="_blank">
+                                <img src="../images/home/download/ios.png">
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact" target="_blank">
+                                <img src="../images/home/download/android.png">
+                            </a>
+                            <a href="https://www.epicgames.com/store/p/genshin-impact" target="_blank">
+                                <img src="../images/home/download/epic.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio src="" autoplay="false" loop="true"></audio>
     </nav>
 
     <div class="container">
         <div class="poster">
-            <video src="../videos/trailer.mp4" muted loop autoplay></video>     
-            <a href="https://act.hoyoverse.com/puzzle/hk4e/pz_XJro91snUM/index.html?game_biz=hk4e_global&utm_source=officialweb&utm_medium=first" target="_blank"><img src="../images/home/poster/letter.png" alt="letter" class="letter"></a>
+            <video src="../videos/trailer.mp4" muted loop autoplay></video>
+            <a href="https://act.hoyoverse.com/puzzle/hk4e/pz_XJro91snUM/index.html?game_biz=hk4e_global&utm_source=officialweb&utm_medium=first"
+                target="_blank"><img src="../images/home/poster/letter.png" alt="letter" class="letter"></a>
             <div class="posterBox">
                 <div class="playArea">
                     <div class="playButtonBorder">
@@ -47,13 +111,17 @@
                     <div class="QRcode"></div>
                     <div class="devices">
                         <div>
-                            <a href="https://www.playstation.com/zh-hant-tw/games/genshin-impact/" target="_blank"><img src="../images/home/download/ps4.png"></a>
-                            <a href="./home.html"><img src="../images/home/download/windows.png"></a>    
+                            <a href="https://www.playstation.com/zh-hant-tw/games/genshin-impact/" target="_blank"><img
+                                    src="../images/home/download/ps4.png"></a>
+                            <a href="./home.html"><img src="../images/home/download/windows.png"></a>
                         </div>
                         <div>
-                            <a href="https://apps.apple.com/app/id1517783697" target="_blank"><img src="../images/home/download/ios.png"></a>
-                            <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact" target="_blank"><img src="../images/home/download/android.png"></a>
-                            <a href="https://www.epicgames.com/store/p/genshin-impact" target="_blank"><img src="../images/home/download/epic.png"></a>    
+                            <a href="https://apps.apple.com/app/id1517783697" target="_blank"><img
+                                    src="../images/home/download/ios.png"></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact"
+                                target="_blank"><img src="../images/home/download/android.png"></a>
+                            <a href="https://www.epicgames.com/store/p/genshin-impact" target="_blank"><img
+                                    src="../images/home/download/epic.png"></a>
                         </div>
                     </div>
                 </div>
@@ -73,18 +141,30 @@
                 </div>
                 <div class="newsList">
                     <ul>
-                        <span><div>最新</div></span>
-                        <a href=""><li>「嘟嘟奇遇，轟轟開玩！」——「嘟嘟可轟轟奇遇記」活動提示<span>2023年10月05日</span></li></a>
-                        <a href=""><li>旅人的徜徉——《原神》楓丹音樂的幕後｜原神<span>2023年10月04日</span></li></a>
-                        <a href=""><li>過場動畫-「為時尚早」｜原神<span>2023年10月03日</span></li></a>
-                        <a href=""><li>《原神》三週年派對第三期：在《原神》印象最深刻的三首曲子<span>2023年10月02日</span></li></a>
-                        <a href=""><li>白露澈明之泉｜原神<span>2023年10月02日</span></li></a>
+                        <span>
+                            <div>最新</div>
+                        </span>
+                        <a href="">
+                            <li>「嘟嘟奇遇，轟轟開玩！」——「嘟嘟可轟轟奇遇記」活動提示<span>2023年10月05日</span></li>
+                        </a>
+                        <a href="">
+                            <li>旅人的徜徉——《原神》楓丹音樂的幕後｜原神<span>2023年10月04日</span></li>
+                        </a>
+                        <a href="">
+                            <li>過場動畫-「為時尚早」｜原神<span>2023年10月03日</span></li>
+                        </a>
+                        <a href="">
+                            <li>《原神》三週年派對第三期：在《原神》印象最深刻的三首曲子<span>2023年10月02日</span></li>
+                        </a>
+                        <a href="">
+                            <li>白露澈明之泉｜原神<span>2023年10月02日</span></li>
+                        </a>
                         <span><a href=""><img src="../images/home/news/more.png" alt="more">加載更多</a></span>
                     </ul>
                 </div>
             </div>
         </div>
-        
+
         <div class="city">
             <ul>
                 <li>
@@ -150,7 +230,5 @@
         </div>
         <div class="footerBottom"></div>
     </footer>
-
 </body>
-
 </html>

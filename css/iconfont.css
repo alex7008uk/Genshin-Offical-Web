@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4310368 */
+  src: url('../images/font_icon/iconfont.woff2?t=1698757500034') format('woff2'),
+       url('../images/font_icon/iconfont.woff?t=1698757500034') format('woff'),
+       url('../images/font_icon/iconfont.ttf?t=1698757500034') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  font-style: normal;
+  color: rgb(153, 153, 153);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Youtube-fill:before {
+  content: "\e883";
+}
+
+.icon-facebook:before {
+  content: "\e8e7";
+}
+
+.icon-instagram:before {
+  content: "\e6bb";
+}
+
+.icon-reddit:before {
+  content: "\e8a1";
+}
+
+.icon-discord:before {
+  content: "\ebf8";
+}
+
+.icon-tuite-f:before {
+  content: "\e7ea";
+}
+

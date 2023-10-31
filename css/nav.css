@@ -279,12 +279,48 @@ nav {
 
 /* 有使用到z-index */
 .itemBox {
-    margin: 0 25px;
+    width: 230px;
+    height: 66px;
+    line-height: 66px;
     z-index: 1;
+    position: relative;
+}
+
+.navMark {
+    width: 28px;
+    border: 2.8px solid rgb(69, 182, 226);
+    transition: 0.15s all linear;
+    position: relative;
+    top: 0;
+}
+
+.newsNavMark {
+    position: absolute;
+    left: 66px;
+}
+
+.charNavMark {
+    position: absolute;
+    left: 132px;
+}
+
+.dataNavMark {
+    position: absolute;
+    left: 198px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .itemBox a {
-    margin-right: 30px;
+    display: block;
     color: #fff;
     text-decoration: none;
     opacity: 0.7;

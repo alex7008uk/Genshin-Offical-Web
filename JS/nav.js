@@ -8,6 +8,9 @@ const cancleBtn = document.querySelector(".cancle");
 const loginBtn = document.querySelector(".loginButton");
 const login = document.querySelector(".login");
 const loginCancleBtn = document.querySelector(".login .loginCancle");
+const itemBox = document.querySelector(".itemBox");
+const navMark = document.querySelector(".navMark");
+const items = document.querySelectorAll(".items a");
 
 let playMusicURL = "../images/nav/playMusic.png";
 let playMusicURL2 = "../../images/nav/playMusic.png";
@@ -29,7 +32,7 @@ function checkFileExists(path) {
   return xhr.status !== 404;
 }
 
-if(checkFileExists(audioURL1)) {
+if (checkFileExists(audioURL1)) {
   audio.src = audioURL1;
 }
 else {
@@ -38,11 +41,11 @@ else {
 audio.volume = 0.3;
 audio.pause();
 
-musicBtn.addEventListener("click", function() {
+musicBtn.addEventListener("click", function () {
   play = !play;
-  if(play) {
+  if (play) {
     audio.play();
-    if(checkFileExists(playMusicURL)) {
+    if (checkFileExists(playMusicURL)) {
       musicBtn.src = playMusicURL;
     }
     else {
@@ -51,7 +54,7 @@ musicBtn.addEventListener("click", function() {
   }
   else {
     audio.pause();
-    if(checkFileExists(pauseMusicURL)) {
+    if (checkFileExists(pauseMusicURL)) {
       musicBtn.src = pauseMusicURL;
     }
     else {
@@ -60,40 +63,51 @@ musicBtn.addEventListener("click", function() {
   }
 });
 
-downloadBtn.addEventListener("click", function(e) {
+downloadBtn.addEventListener("click", function (e) {
   mask.style.height = `${documentHeight}px`;
   mask.style.visibility = "visible";
-  window.addEventListener("mousewheel", preventMouseWheelScroll, {passive: false});
+  window.addEventListener("mousewheel", preventMouseWheelScroll, { passive: false });
   window.addEventListener("DOMMouseScroll", preventMouseWheelScroll, { passive: false });
   download.style.visibility = "visible";
 });
-loginBtn.addEventListener("click", function() {
+loginBtn.addEventListener("click", function () {
   mask.style.height = `${documentHeight}px`;
   mask.style.visibility = "visible";
-  window.addEventListener("mousewheel", preventMouseWheelScroll, {passive: false});
+  window.addEventListener("mousewheel", preventMouseWheelScroll, { passive: false });
   window.addEventListener("DOMMouseScroll", preventMouseWheelScroll, { passive: false });
   login.style.visibility = "visible";
 });
-mask.addEventListener("click", function(e) {
+mask.addEventListener("click", function (e) {
   mask.style.height = `0px`;
   mask.style.visibility = "hidden";
-  window.removeEventListener("mousewheel", preventMouseWheelScroll, {passive: false});
+  window.removeEventListener("mousewheel", preventMouseWheelScroll, { passive: false });
   window.removeEventListener("DOMMouseScroll", preventMouseWheelScroll, { passive: false });
   download.style.visibility = "hidden";
   login.style.visibility = "hidden";
 });
-cancleBtn.addEventListener("click", function(e) {
+cancleBtn.addEventListener("click", function (e) {
   mask.style.height = `0px`;
   mask.style.visibility = "hidden";
-  window.removeEventListener("mousewheel", preventMouseWheelScroll, {passive: false});
+  window.removeEventListener("mousewheel", preventMouseWheelScroll, { passive: false });
   window.removeEventListener("DOMMouseScroll", preventMouseWheelScroll, { passive: false });
   download.style.visibility = "hidden";
 });
-loginCancleBtn.addEventListener("click", function(e) {
+loginCancleBtn.addEventListener("click", function (e) {
   mask.style.height = `0px`;
   mask.style.visibility = "hidden";
-  window.removeEventListener("mousewheel", preventMouseWheelScroll, {passive: false});
+  window.removeEventListener("mousewheel", preventMouseWheelScroll, { passive: false });
   window.removeEventListener("DOMMouseScroll", preventMouseWheelScroll, { passive: false });
   login.style.visibility = "hidden";
   console.log(123);
+});
+
+for (let i = 0; i < items.length; i++) {
+  items[i].addEventListener("mouseenter", function() {
+    let distance = items[i].offsetLeft - navMark.offsetLeft;
+    navMark.style.transform = `translateX(${distance}px)`;
+  });
+}
+
+itemBox.addEventListener("mouseleave", function() {
+  navMark.style.transform = `translateX(0px)`;
 });

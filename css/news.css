@@ -17,6 +17,7 @@ body {
 }
 
 .container .card {
+  display: block;
   width: 420px;
   height: 450px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -30,6 +31,7 @@ body {
   cursor: pointer;
 
   color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
 }
 
 .container .card .imgBox {

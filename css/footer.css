@@ -1,12 +1,72 @@
 footer {
   width: 100%;
-  background-color: #111;
+  background-color:  rgb(26, 26, 26);
 }
 
 .footerTop {
   height: 50px;
+  line-height: 50px;
+  margin-left: 300px;
+}
+
+.footerTop a {
+  text-decoration: none;
+}
+
+.footerTop a span:hover {
+  color: rgb(240, 240, 240);
+}
+
+.footerTop span {
+  margin-right: 20px;
 }
 
 .footerBottom {
   background-color: black;
+  overflow: hidden;
+}
+
+.footerBottom p {
+  color: rgb(136, 136, 136);
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footerBottom img {
+  display: block;
+  height: 67px;
+  margin: 15px auto;
+}
+
+.companyText {
+  text-align: center;
+}
+
+.companyText a {
+  text-decoration: none;
+  color: rgb(136, 136, 136);
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+.companyText a:hover {
+  color: rgb(201, 201, 201);
+}
+
+.agentBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.agentBox img {
+  display: inline-block;
+  margin: 15px 3px;
+  transform: translateX(-10px);
+}
+
+.footerBottom .copyright {
+  color: white;
+  margin-bottom: 30px;
 }

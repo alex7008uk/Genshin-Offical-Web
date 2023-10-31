@@ -71,6 +71,12 @@
     1. 完成10篇新聞文章頁面
     2. 修改nav欄音樂按鈕顯示錯誤
     3. 新增新聞頁面文章連結
+* 2023/10/31
+    1. 新增nav欄指示動畫
+    2. 新增footer區塊
+    3. 修改home頁面news區塊結構
+    4. 新增home頁面news區塊連結與動畫
+    5. 新增news頁面poster文章連結
 ## 參考資料
 
 * https://genshin.hoyoverse.com/zh-tw/home

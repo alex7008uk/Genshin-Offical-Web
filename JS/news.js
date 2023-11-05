@@ -6,6 +6,7 @@
 const newsBoxBtns = document.querySelectorAll(".newsBox ul li button");
 const articleList = document.querySelector(".newsBox .articleList");
 const loadBtn = document.querySelector(".load");
+const topBtn = document.querySelector(".topBtn");
 
 // index
 const type = ["最新", "資訊", "公告", "活動"];
@@ -96,4 +97,17 @@ for (let i = 0; i < newsBoxBtns.length; i++) {
 loadBtn.addEventListener("click", function() {
   // 根據種類進行加載
   loadArticle(type[typeBtn]);
+});
+
+topBtn.addEventListener("click", function() {
+  document.documentElement.scrollTop = 0;
+});
+
+document.addEventListener("scroll", function() {
+  if(document.documentElement.scrollTop >= 500) {
+    topBtn.style.opacity = "1";
+  }
+  else {
+    topBtn.style.opacity = "0";
+  }
 });

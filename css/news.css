@@ -230,3 +230,29 @@ body {
   opacity: 0.7;
   transition: 0.2 opacity linear;
 }
+
+
+.topBtn {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 54px;
+  bottom: 108px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s all linear;
+  opacity: 0;
+}
+
+.topBtn img {
+  width: 22px;
+  height: 24px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.topBtn:hover {
+  background-color: #f8f8f8;
+}

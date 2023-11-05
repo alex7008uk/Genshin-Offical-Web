@@ -94,3 +94,34 @@ newsPicsUl.addEventListener("click", function(e) {
 //     document.querySelector(`.city li:nth-child(${index+1})`).style.border = "none";
 //   });
 // }
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* |                                                   contactBox                                                          | */
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+const contactBox = document.querySelector(".contactBox");
+const contactBtn = document.querySelector(".contactBtn");
+const contactBtnImg = document.querySelector(".contactBtnImg");
+let turn = false;
+
+document.addEventListener("scroll", function() {
+  if(document.documentElement.scrollTop >= (window.innerHeight/2)) {
+    contactBox.style.opacity = "1";
+  }
+  else {
+    contactBox.style.opacity = "0";
+  }
+});
+
+contactBtn.addEventListener("click", function() {
+  if(!turn) {
+    turn = true;
+    contactBtnImg.style.transform = "rotateZ(-180deg)";
+    contactBox.style.transform = "translate(100%, -50%)";
+  }
+  else {
+    turn = false;
+    contactBtnImg.style.transform = "rotateZ(0deg)";
+    contactBox.style.transform = "translate(0%, -50%)";
+  }
+});

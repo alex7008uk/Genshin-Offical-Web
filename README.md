@@ -77,6 +77,15 @@
     3. 修改home頁面news區塊結構
     4. 新增home頁面news區塊連結與動畫
     5. 新增news頁面poster文章連結
+* 2023/11/01
+    1. 新增home頁面聯絡sidebar
+    2. 新增news頁面返回頂部按鈕
+* 2023/11/04
+    1. 新增char頁面雛形
+* 2023/11/05
+    1. 完成char頁面排版
+    2. 新增char頁面選取城市功能
+    3. 新增char頁面選取角色功能
 ## 參考資料
 
 * https://genshin.hoyoverse.com/zh-tw/home

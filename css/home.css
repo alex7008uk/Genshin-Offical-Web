@@ -392,3 +392,94 @@
     opacity: 0;
     transition: 0.2s linear all;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* |                                                   contactBox                                                          | */
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+.contactBox {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: 0.4s all linear;
+}
+
+.contactBox p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 18px auto;
+}
+
+.contactBox .contactList {
+    list-style: none;
+    width: 178px;
+    padding: 10px 2px;
+}
+
+.contactBox .contactList li {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+}
+
+.contactBox .contactList li:hover {
+    background-color: #333;
+    transition: 0.1s all linear;
+}
+
+.contactBox .contactList li a {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.contactBox .contactList li a span {
+    color: #333;
+    font-size: 25px;
+    padding-left: 21px;
+}
+
+.contactBox .contactList li:hover a span {
+    color: #f1ad5f;
+    transition: 0.1s all linear;
+}
+
+.contactList li:nth-child(5) a span {
+    color: #333;
+    font-size: 20px;
+}
+
+.contactBox .contactList li a .contactText {
+    font-size: 19px; 
+    padding-right: 21px;
+}
+
+.contactBtn {
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    width: 30px;
+    height: 52px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #333;
+}
+
+.contactBtnImg {
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 12px;
+    height: 18px;
+    transition: 0.2s all linear;
+    transform: rotateZ('0deg');
+}

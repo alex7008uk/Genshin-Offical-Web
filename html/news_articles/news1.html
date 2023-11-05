@@ -23,7 +23,7 @@
         <div class="items">
             <a href="../home.html">首頁</a>
             <a href="../news.html"  class="active">新聞</a>
-            <a href="">角色</a>
+            <a href="../char.html">角色</a>
             <a href="">資料</a>
         </div>
       </div>
@@ -147,6 +147,8 @@
     </div>
   </div>
 
+  <button class="topBtn"><img src="../../images/news/topBtn.png" alt="pic"></button>
+
   <footer>
     <div class="footerTop">
         <a href="https://hoyo.link/98k1BYAd" target="_blank"><span class="iconfont icon-facebook"></span></a>
@@ -185,6 +187,20 @@
     const leftBtn = document.querySelector(".leftBtn");
     leftBtn.addEventListener("click", function() {
       alert("已是最新文章");
+    });
+
+    const topBtn = document.querySelector(".topBtn");
+    topBtn.addEventListener("click", function() {
+      document.documentElement.scrollTop = 0;
+    });
+
+    document.addEventListener("scroll", function() {
+      if(document.documentElement.scrollTop >= 500) {
+        topBtn.style.opacity = "1";
+      }
+      else {
+        topBtn.style.opacity = "0";
+      }
     });
   </script>
 </body>

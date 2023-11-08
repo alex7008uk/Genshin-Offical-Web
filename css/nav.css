@@ -279,7 +279,7 @@ nav {
 
 /* 有使用到z-index */
 .itemBox {
-    width: 230px;
+    width: 600px;
     height: 66px;
     line-height: 66px;
     z-index: 1;
@@ -310,16 +310,17 @@ nav {
 }
 
 .items {
+    height: 66px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 230px;
+    width: 600px;
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .itemBox a {
+    margin-right: 30px;
     display: block;
     color: #fff;
     text-decoration: none;
@@ -366,4 +367,29 @@ nav {
 
 .downloadButton {
     cursor: pointer;
+}
+
+.itemBox .dataList {
+    cursor: pointer;
+}
+
+.itemBox .dataList ul {
+    width: 200px;
+    text-shadow: none;
+    list-style: none;
+    background-color: rgba(17, 17, 17, 0.9);
+    transform: translateX(-15px);
+    display: none;
+}
+
+.itemBox .dataList ul li {
+    padding-left: 15px;
+}
+
+.itemBox .dataList ul li:hover {
+    background-color: rgba(110, 110, 110, 0.3);
+}
+
+.itemBox .dataList:hover ul {
+    display: block;
 }

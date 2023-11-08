@@ -24,6 +24,7 @@
 .city2 {
   width: 100%;
   height: 100vh;
+  min-height: 800px;
   position: absolute;
   top: 0;
   left: 0;
@@ -34,6 +35,7 @@
 .city3 {
   width: 100%;
   height: 100vh;
+  min-height: 800px;
   position: absolute;
   top: 0;
   left: 0;
@@ -44,6 +46,7 @@
 .city4 {
   width: 100%;
   height: 100vh;
+  min-height: 800px;
   position: absolute;
   top: 0;
   left: 0;
@@ -54,6 +57,7 @@
 .city5 {
   width: 100%;
   height: 100vh;
+  min-height: 800px;
   position: absolute;
   top: 0;
   left: 0;

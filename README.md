@@ -86,6 +86,9 @@
     1. 完成char頁面排版
     2. 新增char頁面選取城市功能
     3. 新增char頁面選取角色功能
+* 2023/11/06
+    1. 新增nav欄資料擴展選單
+    2. 新增nav欄資料擴展選單動畫
 ## 參考資料
 
 * https://genshin.hoyoverse.com/zh-tw/home

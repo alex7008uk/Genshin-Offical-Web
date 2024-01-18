@@ -1,4 +1,18 @@
 /* ------------------------------------------------------------------------------------------------------------------------- */
+/* |                                                    charInit                                                           | */
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+const cityNum = parseInt(sessionStorage.getItem("cityNum"));
+
+(function charInit(num) {
+  document.querySelector(".cityActive").classList.remove("cityActive");
+  document.querySelector(`.cities li:nth-child(${num+1})`).classList.add("cityActive");
+
+  document.querySelector(".cityBgActive").classList.remove("cityBgActive");
+  document.querySelector(`.city${num+1}`).classList.add("cityBgActive");
+})(cityNum);
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
 /* |                                                    citiesUl                                                           | */
 /* ------------------------------------------------------------------------------------------------------------------------- */
 

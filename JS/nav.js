@@ -11,6 +11,7 @@ const loginCancleBtn = document.querySelector(".login .loginCancle");
 const itemBox = document.querySelector(".itemBox");
 const navMark = document.querySelector(".navMark");
 const items = document.querySelectorAll(".items a");
+const dataList = document.querySelectorAll(".dataList ul li");
 
 let playMusicURL = "../images/nav/playMusic.png";
 let playMusicURL2 = "../../images/nav/playMusic.png";
@@ -110,4 +111,20 @@ for (let i = 0; i < items.length; i++) {
 
 itemBox.addEventListener("mouseleave", function() {
   navMark.style.transform = `translateX(0px)`;
+});
+
+dataList[0].addEventListener("click", function() {
+  location.href= "./intro.html";
+});
+
+dataList[1].addEventListener("click", function() {
+  location.href= "./world.html";
+});
+
+dataList[2].addEventListener("click", function() {
+  location.href= "./note.html";
+});
+
+dataList[3].addEventListener("click", function() {
+  location.href= "./comic.html";
 });

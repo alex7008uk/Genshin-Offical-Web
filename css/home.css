@@ -306,8 +306,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: center no-repeat;
+    background: no-repeat center/cover;
     transition: 0.3s linear all;
+}
+
+.city li a {
+    text-decoration: none;
 }
 
 .city li p {

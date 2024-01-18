@@ -78,6 +78,15 @@ newsPicsUl.addEventListener("click", function(e) {
 /* |                                                   city                                                                | */
 /* ------------------------------------------------------------------------------------------------------------------------- */
 
+const cityLis = document.querySelectorAll(".city ul li");
+sessionStorage.setItem("cityNum", 0);
+
+for(let i = 0; i<cityLis.length; i ++) {
+  cityLis[i].addEventListener("click", function() {
+    sessionStorage.setItem("cityNum", i);
+  });
+}
+
 // const cityPs = document.querySelectorAll(".city p");
 
 // for(let index = 0; index < cityPs.length; index++) {
